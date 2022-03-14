@@ -1,5 +1,80 @@
-div {
+* {
+  height: 100%;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "Bed1 Bed1 Living Living Kitchen"
+  "Bed1 Bed1 Living Living Kitchen"
+  "Full Full Living Living Kitchen"
+  "Bed2 Bed2 Half Bed3 Bed3"
+  "Bed2 Bed2 Half Bed3 Bed3";
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.bed1 {
+  grid-area: Bed1;
+}
+
+.bed2 {
+  grid-area: Bed2;
+}
+
+.bed3 {
+  grid-area: Bed3;
+}
+
+.full {
+  grid-area: Full;
+}
+
+.half {
+  grid-area: Half;
+}
+
+.livingRoom {
+  grid-area: Living;
+  background-color: rgb(235, 197, 142);
+}
+
+.kitchen {
+  grid-area: Kitchen;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .05fr .95fr;
+  grid-template-areas: 
+  "Oven Sink"
+  ". ."
+  ;
+  background-color: orange;
+}
+
+.sink {
+  grid-area: Sink;
+  background-color: rgb(212, 58, 58);
+}
+
+.oven {
+  grid-area: Oven;
+  background-color: rgb(209, 60, 202);
+}
+
+.bedRoom {
+  background-color: rgb(41, 182, 182);
+}
+
+.bathRoom {
+  background-color: rgb(96, 209, 96);
+}
+/* div {
   border: 1px solid grey;
   margin: 5px;
   padding: 5px;
-}
+} */

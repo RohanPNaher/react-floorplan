@@ -1,7 +1,7 @@
-const Bedroom = () => {
+const Bedroom = (props) => {
   return ( 
     <>
-      This is the Bedroom
+      Bedroom {props.bedNum}
     </>
   );
 }

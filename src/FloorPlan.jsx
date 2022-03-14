@@ -6,21 +6,29 @@ import Bath from "./Bath";
 const FloorPlan = () => {
   return ( 
     <>
-      This is a floorplan!
-      <div>
-        <div>
+      <main className='grid-container'>
+        <div className="bedRoom bed1">
+          <Bedroom bedNum={1} />
+        </div>
+        <div className="kitchen">
           <Kitchen />
         </div>
-        <div>
+        <div className="bathRoom full">
+          <Bath size={'Full'}/>
+        </div>
+        <div className="bedRoom bed2">
+          <Bedroom bedNum={2} />
+        </div>
+        <div className="livingRoom">
           <LivingRoom />
         </div>
-        <div>
-          <Bedroom />
+        <div className="bathRoom half">
+          <Bath size={'Half'} />
         </div>
-        <div>
-          <Bath />
+        <div className="bedRoom bed3">
+          <Bedroom bedNum={3} />
         </div>
-      </div>
+      </main>
     </>
   );
 }

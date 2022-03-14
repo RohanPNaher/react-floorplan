@@ -1,7 +1,16 @@
+import Sink from "./Sink";
+import Oven from "./Oven";
+
 const Kitchen = () => {
   return ( 
     <>
-      This is the kitchen
+      Kitchen
+    <div className='oven'>
+      <Oven />
+    </div>
+    <div className="sink">
+      <Sink />
+    </div>
     </>
   );
 }

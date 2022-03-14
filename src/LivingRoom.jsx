@@ -1,7 +1,7 @@
 const LivingRoom = () => {
   return ( 
     <>
-      This is the LivingRoom
+      Living Room
     </>
   );
 }

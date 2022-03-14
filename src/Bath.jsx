@@ -1,7 +1,7 @@
-const Bath = () => {
+const Bath = (props) => {
   return ( 
     <>
-      This is the Bath
+      {props.size} Bath
     </>
   );
 }
