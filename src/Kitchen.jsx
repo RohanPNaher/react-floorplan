@@ -4,7 +4,9 @@ import Oven from "./Oven";
 const Kitchen = () => {
   return ( 
     <>
+    <div className="label">
       Kitchen
+    </div>
     <div className='oven'>
       <Oven />
     </div>

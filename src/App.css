@@ -19,6 +19,12 @@
   font-weight: 600;
 }
 
+.grid-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bed1 {
   grid-area: Bed1;
 }
@@ -44,16 +50,23 @@
   background-color: rgb(235, 197, 142);
 }
 
-.kitchen {
+div.kitchen {
   grid-area: Kitchen;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: .05fr .95fr;
   grid-template-areas: 
   "Oven Sink"
-  ". ."
+  "Label Label"
   ;
   background-color: orange;
+  text-align: center;
+}
+
+.kitchen > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sink {
@@ -64,6 +77,10 @@
 .oven {
   grid-area: Oven;
   background-color: rgb(209, 60, 202);
+}
+
+.label {
+  grid-area: Label;
 }
 
 .bedRoom {
